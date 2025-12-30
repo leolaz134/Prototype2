@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 8832616502998352122}
   - component: {fileID: 3726717279875369490}
   - component: {fileID: 1850980390962461831}
-  - component: {fileID: 8682897851812753543}
   - component: {fileID: 4859086561280328123}
   - component: {fileID: 6192376518657263217}
+  - component: {fileID: 271696733029796661}
+  - component: {fileID: 5991478149210586014}
   m_Layer: 0
   m_Name: Animal_Moose_02
   m_TagString: Animal
@@ -82,18 +83,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
   speed: 20
---- !u!114 &8682897851812753543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1523793897391933602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65fe46b94bfba5c4e82c8223a2aad169, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
 --- !u!65 &4859086561280328123
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -129,6 +118,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AnimalHunger
   hungerSlider: {fileID: 1580744876510578647}
   amountToBeFed: 3
+--- !u!114 &271696733029796661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523793897391933602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81e62e9a8a22fac478a927ce940e28f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectCollisions
+--- !u!114 &5991478149210586014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523793897391933602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c52ee72091692143869a36cdefe1fd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
 --- !u!1 &1964386533391750875
 GameObject:
   m_ObjectHideFlags: 0

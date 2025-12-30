@@ -5003,8 +5003,9 @@ GameObject:
   - component: {fileID: 9566022}
   - component: {fileID: -4228306730849563461}
   - component: {fileID: 9066149549827443824}
-  - component: {fileID: 4185229995651554182}
   - component: {fileID: 2136369165517351742}
+  - component: {fileID: 2879228256326042011}
+  - component: {fileID: 6448809695993940133}
   m_Layer: 0
   m_Name: Dog_Pug_01
   m_TagString: Animal
@@ -5121,18 +5122,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.092923835, y: 1, z: 0.26991487}
   m_Center: {x: -0.005530882, y: 0, z: 0.022123754}
---- !u!114 &4185229995651554182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 187016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65fe46b94bfba5c4e82c8223a2aad169, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
 --- !u!114 &2136369165517351742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5147,6 +5136,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AnimalHunger
   hungerSlider: {fileID: 4603790714719357289}
   amountToBeFed: 2
+--- !u!114 &2879228256326042011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81e62e9a8a22fac478a927ce940e28f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectCollisions
+--- !u!114 &6448809695993940133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c52ee72091692143869a36cdefe1fd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
 --- !u!1 &187934
 GameObject:
   m_ObjectHideFlags: 0

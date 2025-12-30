@@ -12,10 +12,9 @@ GameObject:
   - component: {fileID: 646364243347611456}
   - component: {fileID: 2197264945856168071}
   - component: {fileID: 8804875114790494089}
-  - component: {fileID: -7602478366063477072}
   - component: {fileID: -8652518896168569953}
   - component: {fileID: 5486931335215824194}
-  - component: {fileID: -5162129554464556743}
+  - component: {fileID: 6087532037545268818}
   m_Layer: 0
   m_Name: Projectile
   m_TagString: Projectile
@@ -107,18 +106,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
   speed: 40
---- !u!114 &-7602478366063477072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3134867882359466444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65fe46b94bfba5c4e82c8223a2aad169, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
 --- !u!65 &-8652518896168569953
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -167,7 +154,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-5162129554464556743
+--- !u!114 &6087532037545268818
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -176,6 +163,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 3134867882359466444}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3485a3ba50da2ad4dbda260a89a867e9, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c52ee72091692143869a36cdefe1fd7, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DetectCollisions
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds

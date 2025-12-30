@@ -1,34 +1,17 @@
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class DetectCollisions : MonoBehaviour
 {
-    private GameManager gameManager;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void OnTriggerEnter(Collider other)
     {
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        // Instead of destroying the projectile when it collides with an animal
+        //Destroy(other.gameObject); 
+
+        // Just deactivate the food and destroy the animal
+        other.gameObject.SetActive(false);
+        Destroy(gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.CompareTag("Player"))
-        {
-            //Only destroy collided object if player collides with it
-            gameManager.AddLives(-1);
-            Destroy(gameObject);
-        }
-        else if(other.CompareTag("Animal"))
-        {
-            //Destory game object when animal hunger is filled
-            other.GetComponent<AnimalHunger>().FeedAnimal(1);
-            Destroy(gameObject);
-        }
-            
-    }
 }
